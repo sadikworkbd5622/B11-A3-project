@@ -7,7 +7,7 @@
     <title>Nature's Platter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/99ab2aad64.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -34,6 +34,10 @@
         
         .f-a {
             font-family: "ADLaM Display", serif;
+        }
+        
+        .f-p {
+            font-family: "Poppins", serif;
         }
     </style>
 
@@ -306,7 +310,85 @@
             </div>
         </div>
 
+        <!-- offer -->
+        <div class="container mx-auto mt-12 lg:mt-36 mb-[360px] lg:mb-[390px] px-4 lg:px-0 flex flex-col lg:flex">
+            <h2 class="text-primary-text font-semibold text-[24px] lg:text-[36px]">
+                Arrival & Offers
+            </h2>
+            <div class="grid grid-cols-1 grid-rows-2 lg:grid-rows-1 lg:grid-cols-[3fr_2fr] gap-4 mt-8 lg:mt-12">
+                <!-- First -->
+                <div class=" flex justify-between items-center bg-[#115414] rounded-xl pl-5 lg:px-16 py-4">
+                    <div class="flex flex-col gap-4">
+                        <img class="w-[113.40px] h-[42.41px] lg:w-[246.63px] lg:h-[76.44px]" src="./c2-assets/dawat-logo.png" alt="" />
+                        <div class="font-normal text-white text-[13px] lg:text-2xl bg-[#63B76D] rounded-lg px-4 py-2 f-p">
+                            Cook Exotic Dishes
+                        </div>
+                        <h3 class=" text-white text-[22px] lg:text-[40px] f-p"><span class=" font-normal">UP to</span><span class="font-bold"> 20% OFF</span></h3>
+                    </div>
+
+                    <img class="w-[147.51px] h-[147.40px] lg:w-[320px] lg:h-[310px] lg:relative lg:left-10" src="./c2-assets/dawat-mock-up.png" alt="" />
+                </div>
+                <!-- 2nd -->
+                <div class="flex justify-between items-center bg-[#102861] rounded-xl pl-5 py-4">
+                    <div class="flex flex-col gap-4">
+                        <div>
+                            <img class="w-[64.53px] h-[70.99px] lg:w-[93.57px] lg:h-32" src="./c2-assets/india-gate-logo.png" alt="" />
+                        </div>
+                        <div class="f-p font-normal text-white text-sm lg:text-2xl bg-[#2A4D97] rounded-lg px-4 py-2">
+                            World’s No.1 Rice
+                        </div>
+                        <h3 class=" text-white text-[22px] lg:text-[40px] f-p"><span class=" font-normal">UP to</span><span class="font-bold"> 40% OFF</span></h3>
+                    </div>
+                    <img class="w-[100.77px] h-[160.49px] lg:w-[175.12px] lg:h-[287.50px] relative right-4" src="./c2-assets/india-gate-mock-up.png" alt="" />
+                </div>
+            </div>
+        </div>
     </main>
+    <!-- footer -->
+    <footer class="relative bg-primary-text">
+        <!-- sub -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 container mx-auto px-4 lg:px-0">
+            <div class="bg-primary-bg rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-12 py-9 lg:py-14 justify-evenly items-center">
+                <div class="place-self-center w-64 h-44 lg:w-auto lg:h-auto">
+                    <img src="./c2-assets/vegetable-busket.png" alt="" />
+                </div>
+                <div class="flex flex-col items-center lg:items-start lg:text-left px-10 lg:px-0">
+                    <h3 class="text-xl lg:text-4xl font-semibold text-primary-text lg:text-black">Get Grocery News</h3>
+                    <p class="text-center text-base lg:text-xl mt-3 mb-5 lg:mt-6 lg:mb-9">
+                        Exclusive training tips, ticks, product deals and more.
+                    </p>
+
+                    <input class="bg-white rounded-md p-3 lg:p-4 mb-3 lg:mb-5 w-full lg:w-[70%]" type="text" name="email" placeholder="Enter email..." />
+                    <button class="btn px-7 py-2 font-normal text-lg text-white rounded-lg border-none bg-[#31b331]">
+                Subscribe
+              </button>
+                </div>
+            </div>
+        </div>
+        <!-- footer main -->
+        <div class="container mx-auto grid gap-9 lg:gap-36 justify-between items-end px-4 lg:px-0 pt-[360px] lg:pt-[370px] pb-10 lg:pb-[140px] lg:grid-cols-3">
+            <nav class="">
+                <img src="./c2-assets/logo-footer.png" alt="" />
+                <p class="pt-3 text-[20px] font-normal text-white opacity-70">
+                    Discover a world of treats, toys, and essentials handpicked for your furry friends
+                </p>
+            </nav>
+            <nav class="lg:place-self-center flex flex-col gap-5 lg:gap-8 font-normal text-[20px] text-white">
+                <a href="#">Product</a>
+                <a href="#">Services</a>
+                <a href="#">Contact us</a>
+            </nav>
+            <nav class="lg:place-self-end flex flex-col gap-2 lg:gap-8">
+                <h6 class="font-medium text-[16px] text-white">Follow Us</h6>
+                <div class="flex gap-8 text-white">
+                    <a class=""><i class="fa-brands fa-2x fa-facebook"></i></a>
+                    <a class=""><i class="fa-brands fa-2x fa-instagram"></i></a>
+                    <a class=""><i class="fa-brands fa-2x fa-linkedin"></i></a>
+                    <a class=""><i class="fa-brands fa-2x fa-youtube"></i></a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 
 </body>
 
