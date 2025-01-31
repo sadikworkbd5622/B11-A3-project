@@ -11,10 +11,156 @@
     <script src="https://kit.fontawesome.com/99ab2aad64.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                        "primary-bg": "#EFEBE3",
+                        "primary-text": "#179800",
+
+                    },
+
+                },
+            },
+        };
+    </script>
+
+    <style>
+        .f-s {
+            font-family: "Sora", serif;
+        }
+    </style>
 
 </head>
 
-<body>
+
+
+
+<body class="f-s text-black">
+    <!-- header -->
+    <header class="bg-gradient-to-b from-white to-[#efebe3] lg:pt-6">
+        <!-- nav -->
+        <div class="navbar container mx-auto border-solid  lg:border-none">
+            <div class="navbar-start">
+                <img class="hidden lg:flex" src="./c2-assets/logo-header.png" alt="logo" />
+                <img class="lg:hidden" src="./c2-assets/Group.png" alt="logo" />
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal text-xl px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end lg:gap-7">
+                <div class="dropdown ">
+                    <div tabindex="0" role="button" class="btn btn-ghost w-[30px] h-[30px] lg:hidden">
+                        <i class="fa-solid fa-bars text-[#179800] text-2xl"></i>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-lg fa-magnifying-glass hidden lg:flex"></i>
+                <i class="fa-solid fa-lg fa-cart-shopping hidden lg:flex"></i>
+                <div class="flex gap-3">
+                    <a class="btn px-7 py-2 font-normal text-xl rounded-lg bg-white border border-[#179800] hidden lg:flex">Login</a
+                >
+                <a
+                  class="btn px-7 py-2 font-normal text-lg text-white rounded-lg border-none bg-[#31b331] hidden lg:flex"
+                  >Register</a
+                >
+                
+              </div>
+              
+            </div>
+            
+          </div>
+          <div class="md:hidden mt-0">
+            <hr class="h-[2px] bg-[#179800]">
+          </div>
+          <!-- banner -->
+          <div
+        class="container mx-auto grid place-items-center gap-4 lg:gap-8 mt-24"
+      >
+        <div class="text-center px-7 text-[#111111] space-y-4 lg:space-y-8">
+          <h1 class="text-[32px] lg:text-[56px] font-semibold">
+            Freshness <span class="text-[#179800]">You Can<br />Count</span> On,
+            Prices You’ll Love!
+          </h1>
+          <p
+            class="text-[16px] font-light opacity-80 lg:text-[20px] lg:font-normal"
+          >
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+        </div>
+        <img src="./c2-assets/hero-vegetables.png" alt="" />
+      </div>
+    
+    </header>
+          <!-- main -->
+          <main>
+            <!-- services -->
+            <div
+              class="container mx-auto my-12 lg:my-36 px-4 lg:px-0 flex flex-col lg:flex"
+            >
+              <h3 class="text-primary-text font-semibold text-[24px] lg:text-[36px]">
+                Services
+              </h3>
+              <div class="mt-8 lg:mt-11 grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- card2 -->
+                <div class="rounded-[16px] bg-primary-bg p-6 lg:p-8 text-center flex flex-col gap-5 lg:gap-6"
+                >
+                  <div
+                    class="mx-auto rounded-[100%] h-40 w-40 flex justify-center align-middle p-[25px] bg-white"
+                  >
+                    <img src="./c2-assets/service.png" alt="service logo" />
+                  </div>
+                  <h3 class="text-[20px] font-semibold lg:text-[24px]">
+                    24/7 Services
+                  </h3>
+                  <p class="text-[16px] font-light opacity-70 text">
+                    24/7 services provide continuous, round-the-clock support, ensuring availability and convenience anytime needed.
+                  </p>
+                </div>
+                <!-- card2 -->
+                <div class="rounded-[16px] bg-primary-bg p-6 lg:p-8 text-center flex flex-col gap-5 lg:gap-6"
+                >
+                  <div
+                    class="mx-auto rounded-[100%] h-40 w-40 flex justify-center align-middle p-[25px] bg-white"
+                  >
+                    <img src="./c2-assets/delivery.png" alt="service logo" />
+                  </div>
+                  <h3 class="text-[20px] font-semibold lg:text-[24px]">
+                    Fast Delivery
+                  </h3>
+                  <p class="text-[16px] font-light opacity-70 text">
+                    Fast delivery ensures quick, efficient, and timely shipping, enhancing customer satisfaction and convenience.
+                  </p>
+                </div>
+                <!-- card3 -->
+                <div class="rounded-[16px] bg-primary-bg p-6 lg:p-8 text-center flex flex-col gap-5 lg:gap-6"
+                >
+                  <div
+                    class="mx-auto rounded-[100%] h-40 w-40 flex justify-center align-middle p-[25px] bg-white"
+                  >
+                    <img src="./c2-assets/healthy.png" alt="service logo" />
+                  </div>
+                  <h3 class="text-[20px] font-semibold lg:text-[24px]">
+                    Healthy Products 
+                  </h3>
+                  <p class="text-[16px] font-light opacity-70 text">
+                    Healthy products are nutritious, natural, and beneficial for overall well-being, supporting a healthy lifestyle.
+                  </p>
+                </div>
+                </div>
+                </div>
+            </main>
 
 </body>
 
