@@ -39,7 +39,27 @@
         .f-p {
             font-family: "Poppins", serif;
         }
+        
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.9;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .animation-heartbeat {
+            animation: heartbeat 2s infinite;
+        }
     </style>
+
 
 </head>
 
@@ -82,11 +102,11 @@
             </div>
 
         </div>
-        <div class="container mx-auto lg:hidden mt-0">
+        <div class="overflow-hidden container mx-auto lg:hidden mt-0">
             <hr class="h-[2px] bg-[#179800]">
         </div>
         <!-- banner -->
-        <div class="container mx-auto grid place-items-center gap-4 lg:gap-8 mt-24">
+        <div class="overflow-hidden container mx-auto grid place-items-center gap-4 lg:gap-8 mt-24">
             <div class="text-center px-7 text-[#111111] space-y-4 lg:space-y-8">
                 <h1 class="text-[32px] lg:text-[56px] font-semibold">
                     Freshness <span class="text-[#179800]">You Can<br />Count</span> On, Prices You’ll Love!
@@ -95,7 +115,8 @@
                     Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
                 </p>
             </div>
-            <img src="./c2-assets/hero-vegetables.png" alt="" />
+
+            <img src="./c2-assets/hero-vegetables.png" alt="" class="container mx-auto transform transition duration-500 ease-in-out animation-heartbeat" />
         </div>
 
     </header>
